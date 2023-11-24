@@ -1,0 +1,84 @@
+.container {
+    max-width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: mediumblue;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.panels-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.panel {
+    flex: 0 0 31%;
+    margin: 1%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 8px;
+    border: solid 5px black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel:hover {
+    transform: scale(1.05);
+}
+
+.loading-spinner {
+    scale: 15%;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
